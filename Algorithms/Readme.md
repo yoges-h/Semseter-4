@@ -18,3 +18,15 @@
 
 #### Prism algorithms , Minimum Spamnning Trees , Undirected Graph, prism Algo , Tarjan Algo, Topological sort, Strogly Connected Component of a Graph. 
 
+
+# Interval Scheduling 
+
+Idea Behind the Activity Section Problem 
+
+1 First Sort The activity According to their Easlist deadline.
+2 select the First activity from the sorted array and Print it 
+that means run this activity 
+
+ 3 if the start time of an activity is greater than or Equal to the Start time of the Previous Activity then we will select this Activity Or We will Reject this Activity.
+ 
+ 
