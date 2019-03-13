@@ -46,6 +46,27 @@
 
      If no accept state is marked, accept; otherwise, reject.”
 
-
+#### ACFG is a decidable language.
+        TM S for ACFG follows.
+       S = “On input ⟨G, w⟩, where G is a CFG and w is a string:
+      
+       Convert G to an equivalent grammar in Chomsky normal form.
+       
+       List all derivations with 2n − 1 steps, where n is the length of w;
+       except if n = 0, then instead list all derivations with one step.
+       
+       If any of these derivations generate w, accept; if not, reject.”
+       
+ #### Every context-free language is decidable.
      
- 
+     Let G be a CFG for A and design a TM MG that decides A. We build a copy of G into MG. It works as follows.
+          MG = “On input w:
+          Run TM S on input ⟨G, w⟩.
+          If this machine accepts, accept; if it rejects, reject.”
+          
+#### ATM is undecidable.
+     U =“On input⟨M,w⟩,where M is a TM and w is a string:
+     Simulate M on input w.
+     
+     If M ever enters its accept state, accept; if M ever enters its
+      reject state, reject.”
